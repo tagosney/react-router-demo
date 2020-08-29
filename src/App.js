@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
 
 import "bulma/css/bulma.min.css";
-import Home from './Home'
-import About from './About'
-import Profile from './Profile';
+import Home from './pages/Home'
+import About from './pages/About'
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -14,13 +14,13 @@ function App() {
       <Navbar />
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/profile">
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/profile/:name">
             <Profile />
           </Route>
         </Switch>
