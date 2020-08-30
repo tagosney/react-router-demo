@@ -1,3 +1,5 @@
+This project was created based on this tutorial: https://www.freecodecamp.org/news/react-router-tutorial/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
